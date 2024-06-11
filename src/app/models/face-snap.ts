@@ -39,5 +39,10 @@ export class Facesnap {
         setLocation(location: string): void{
             this.location = location;
         }
+
+        withHashLocation(location: string): Facesnap {
+            this.setLocation(location);
+            return this;
+        }
 }
 
