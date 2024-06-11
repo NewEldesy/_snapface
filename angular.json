@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "snapface": {
+    "new_project": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -39,7 +39,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/snapface",
+            "outputPath": "dist/new_project",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -86,10 +86,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "snapface:build:production"
+              "buildTarget": "new_project:build:production"
             },
             "development": {
-              "buildTarget": "snapface:build:development"
+              "buildTarget": "new_project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -122,6 +122,6 @@
     }
   },
   "cli": {
-    "analytics": "68fc6d10-2af5-4aa1-919a-fe85698e368a"
+    "analytics": "21a4953f-0182-432e-844a-e9acb035cc31"
   }
 }
