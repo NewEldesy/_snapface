@@ -34,11 +34,26 @@
 .snapped {
   background-color: rgba(lightgreen, 0.4);
   color: darkgreen;
-  button {
+  button { // This targets the snap button when snapped
     box-shadow: lightgreen 3px 3px 7px;
     color: darkgreen;
     &:active {
       box-shadow: lightgreen 0 0 5px;
     }
+  }
+}
+
+.view-details-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 10px; // If placing next to snap button
+
+  &:hover {
+    background-color: #0056b3;
   }
 }

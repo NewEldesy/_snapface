@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FaceSnapListComponent } from './face-snap-list/face-snap-list.component';
+import { Component } from '@angular/core'; // OnInit is not needed anymore
+import { RouterOutlet } from '@angular/router'; // Import RouterOutlet
 import { HeaderComponent } from './header/header.component';
 
 @Component({
@@ -7,11 +7,12 @@ import { HeaderComponent } from './header/header.component';
   standalone: true,
   imports: [
     HeaderComponent,
-    FaceSnapListComponent
+    RouterOutlet // Add RouterOutlet here
+    // FaceSnapListComponent is removed
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent{
-  
+export class AppComponent { // Removed OnInit implementation
+
 }

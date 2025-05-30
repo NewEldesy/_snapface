@@ -1,15 +1,18 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Facesnap } from '../models/face-snap';
-import { DatePipe, LowerCasePipe, NgClass, NgStyle, TitleCasePipe, UpperCasePipe } from '@angular/common';
+import { CommonModule, DatePipe, NgClass, NgStyle, UpperCasePipe } from '@angular/common'; // Added CommonModule
+import { RouterLink } from '@angular/router'; // Import RouterLink
 
 @Component({
   selector: 'app-face-snap',
   standalone: true,
   imports: [
+    CommonModule, // Added CommonModule
     NgStyle,
     NgClass,
     UpperCasePipe,
-    DatePipe
+    DatePipe,
+    RouterLink // Added RouterLink
   ],
   templateUrl: './face-snap.component.html',
   styleUrl: './face-snap.component.scss'
