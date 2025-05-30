@@ -8,6 +8,7 @@
     <p>Créer le : {{ faceSnap.createdAt | date: 'dd MMMM YYYY, à HH:mm' }}</p>
     <p>
         <button (click)="onSnap()"> {{SnapButtonText}} </button>
+        <a [routerLink]="['/facesnaps', faceSnap.id]" class="view-details-button">View Details</a>
         <span [ngStyle]="{color: 'rgb(0, '+ faceSnap.snaps +', 0)' }">🤌 {{ faceSnap.snaps }}</span>
     </p>
 </div>

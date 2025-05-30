@@ -1,0 +1,59 @@
+.face-snap-card {
+  box-sizing: border-box;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.face-snap-card img {
+  width: 100%;
+  max-width: 300px; /* Added to control image size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.face-snap-card h2 {
+  margin-bottom: 0;
+}
+
+.face-snap-card p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.snapped {
+  background-color: lightgreen;
+  color: darkgreen;
+}
+
+.snapped span {
+  color: darkgreen;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.not-found {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.not-found p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
